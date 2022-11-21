@@ -27,7 +27,7 @@
 ##################################################################################################################
 
 user=$( who | cut -d ' ' -f1 | uniq)
-cd /home/$user/.config/arco-chadwm/arco-chadwm
+cd /home/$user/.config/arco-chadwm/chadwm
 sudo make -B
 sudo make install
 
