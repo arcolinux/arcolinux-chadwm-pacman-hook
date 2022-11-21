@@ -28,9 +28,19 @@
 
 user=$( who | cut -d ' ' -f1 | uniq)
 cd /home/$user/.config/arco-chadwm/chadwm
+
+tput setaf 2
+echo "###############################################################################"
+echo "###                 PERSONAL PACMAN HOOK CHADWM START                      ####"
+echo "###############################################################################"
+echo
+echo "Creating Chadwm for "$USER
+echo
+
 sudo make -B
 sudo make install
 
 echo "###############################################################################"
-echo "###                                   DONE                                 ####"
+echo "###                 PERSONAL PACMAN HOOK CHADWM STOP                       ####"
 echo "###############################################################################"
+tput sgr0
