@@ -35,13 +35,16 @@ echo "##########################################################################
 echo "###                 PERSONAL PACMAN HOOK CHADWM START                      ####"
 echo "###############################################################################"
 echo
-echo "Creating Chadwm for "$user
-echo
+# echo "Creating Chadwm for "$user
+# echo
 
-cd /home/$user/.config/arco-chadwm/chadwm
+# cd /home/$user/.config/arco-chadwm/chadwm
 
-sudo make -B
-sudo make install
+# sudo make -B
+# sudo make install
+echo "If you have a personalized chadwm remember"
+echo "to make and sudo make install it from your folder"
+
 echo
 echo "###############################################################################"
 echo "###                 PERSONAL PACMAN HOOK CHADWM STOP                       ####"
